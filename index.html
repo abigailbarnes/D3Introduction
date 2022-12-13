@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta charset="utf-8">
+    <title>DataVis'22 hw2</title>
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        user-select: none;
+      }
+      #show {
+        display: grid;
+      }
+      #show-png, #show-svg {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+        /* so that neither png nor svg gets click events */
+        pointer-events: none;
+      }
+      #show-svg {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="show">
+      <object type="image/png" id="show-png" data="hw2.png"></object>
+      <!-- svg is on top of png -->
+      <object type="image/svg+xml" id="show-svg" data="hw2.svg"></object>
+    </div>
+    <p id="flipper" style="text-align:center;">showing PNG; click to show SVG</p>
+  </body>
+
+  <script type="module">
+    let showsvg = false;
+    function flip() {
+      showsvg = !showsvg;
+      document.querySelector('#show-svg').style.display = showsvg ? 'block' : 'none';
+      document.querySelector('#flipper').innerHTML =
+        showsvg
+          ? 'showing SVG; click to show PNG'
+          : 'showing PNG; click to show SVG'; // bad copy-and-paste!
+    }
+    // document.querySelector("#flipper").addEventListener('click', flip);
+    document.body.addEventListener('click', flip);
+  </script>
+</html>

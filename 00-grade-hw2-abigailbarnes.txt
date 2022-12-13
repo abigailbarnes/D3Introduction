@@ -1,0 +1,40 @@
+abigailbarnes hw2 grade: 36/38
+Graded revision 9
+
+Graded by: GLK
+
+
+question 1: finishing hw2.svg to match hw2.png
+#1diff = 5/5 (matched appearance of given hw2.png image)
+#1parts = 5/5 (2 lines, 1 rect, 1 ellipse, 1 (triangle) path)
+looks like you opted to use "path" elements instead of "line" as requested,
+but it ends up looking the same
+#1format = 5/5 (conformed to stated geometry/color limits and to svg format)
+
+
+question 2: find and describe a visualization
+#2.1 = 1/1 (find/identify vis)
+#2.2 = 5/5 (describe data variables)
+  right - the nodes of the graph could be considered nominal, but the connections
+  between them, which make graph data into a graph, don't fit within Stephens' scales
+#2.3 = 2/2 (describe data source)
+#2.4 = 4/5 (how are layout and encoding used)
+  yes layout uses spatial proximity to show greater connectivity,
+  but don't miss the basics: encoding uses tiny thumbnail images to show artist,
+  and lines to show connections
+#2.5 = 3/3 (what's the point)
+#2.6 = 2/2 (successful?)
+#2.7 = 4/5 (concision)
+  over 350 words (discounting restatement of question); brevity matters
+
+Grades for individual questions are indicated as a fraction E/T, where E is
+what you earned, and T is the total possible.
+
+Requests for reconsideration of a grade should be made as soon as possible (and
+no later than a week after this grade was returned). Post a private note in the
+hw2 Edstem category. Include:
+ - your CNetID
+ - the question you think was mis-graded
+ - who graded it
+ - why it should be regraded.
+
